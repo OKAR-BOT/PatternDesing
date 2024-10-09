@@ -1,6 +1,7 @@
-use BDProyecto;
-
-
+create database BDproyecto;
+GO
+USE BDproyecto;
+GO
 CREATE TABLE Usuarios(
 	id int primary key identity(1,1),
 	Nombre varchar(40),
@@ -70,7 +71,7 @@ END;
 
 EXEC GestionarUsuario 
     @Operacion = 'Insertar', 
-    @Nombre = 'Juan Pérez', 
+    @Nombre = 'Juan PÃ©rez', 
     @Edad = 30, 
     @Sexo = 'M', 
     @FechaRegistro = '2024-10-03';
@@ -78,7 +79,7 @@ EXEC GestionarUsuario
 EXEC GestionarUsuario 
     @Operacion = 'Actualizar', 
     @Id = 1, 
-    @Nombre = 'Juan Pérez', 
+    @Nombre = 'Juan PÃ©rez', 
     @Edad = 31, 
     @Sexo = 'M';
 
